@@ -4,15 +4,10 @@ function Details(props) {
 
   return (
     <React.Fragment>
-
-      {props.click? 
-      <p className="title">ADVICE #{props.number}</p>: 
-      <p className="title">ADVICE #{props.number}</p>}
+      <p className="title">ADVICE #{props.number}</p>
       <q>{props.advice}</q>
-      {/* <div className="ruler"> */}
-      {/* </div> */}
       <hr />
-      <div className="dice-container" onClick={props.clicked}>
+      <div className="dice-container" >
         <img src={dice} alt="Dice Logo" />
       </div>
     </React.Fragment>
