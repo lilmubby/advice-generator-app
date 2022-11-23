@@ -3,23 +3,14 @@ import axios from 'axios';
 import './App.css';
 import Details from './components/Details'
 function App() {
-  // const [click, setClick] = useState(false);
-  // const [error, setError] = useState(false);
   const [data, setData] = useState([]);
-  // const adviceAPI = async () => {
-  //   try {
-  //     const res = await fetch('https://api.adviceslip.com/advice');
-  //     if (!res.ok) throw new Error("Couldn't fetch new Advice");
-  //     const data = await res.json();
-  //   } catch(err) {
-  //     console.error(err)
-  //   }
-  // };
+  
   useEffect(() => {
     axios.get('https://api.adviceslip.com/advice')
     .then(res => {
+      console.log(res.status);
+      if(res.status !== 200) throw new Error("Request Not Found")
       setData(res.data.slip)
-      // console.log(res.data)
     })
     .catch((err) => console.error(err.message))
   }, [])

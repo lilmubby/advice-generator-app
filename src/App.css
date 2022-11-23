@@ -61,6 +61,10 @@ q{
   text-align: center;
 }
 
+.ruler{
+  background-color: red;
+}
+
 .dice-container{
   background-color: var(--neon-green);
   border-radius: 50%;
