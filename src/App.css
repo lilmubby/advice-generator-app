@@ -1,0 +1,72 @@
+:root{
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+
+  --ff: "Manrope", sans-serif;
+  --fs-quotes: 28px;
+  --fs: 16px;
+  --fw: 800;
+
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  /* background-color: var(--Dark-Grayish-Blue); */
+  font-family: var(--ff);
+  background-color: white;
+  /* min-height: 100vh; */
+  width: 100vw;
+}
+#root{
+  align-items: center;
+  /* background-color: red; */
+  background-color: var(--Dark-Grayish-Blue);
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.app{
+  background-color: var(--grayish-blue);
+  /* background-color: blue; */
+  border-radius: .65rem;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: relative;
+  width: 343px;
+}
+
+.title{
+  color: var(--neon-green);
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+q{
+  color: var(--Light-Cyan);
+  font-size: var(--fs-quotes);
+  font-weight: var(--fw);
+  text-align: center;
+}
+
+.dice-container{
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  padding: 1rem 1.125rem;
+  position: absolute;
+  top: 87%;
+  left: 145px;
+  width: fit-content;
+}
