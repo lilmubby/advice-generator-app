@@ -9,8 +9,9 @@ function Details(props) {
       <p className="title">ADVICE #{props.number}</p>: 
       <p className="title">ADVICE #{props.number}</p>}
       <q>{props.advice}</q>
-      <div className="ruler">
-      </div>
+      {/* <div className="ruler"> */}
+      {/* </div> */}
+      <hr />
       <div className="dice-container" onClick={props.clicked}>
         <img src={dice} alt="Dice Logo" />
       </div>
